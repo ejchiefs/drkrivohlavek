@@ -7,10 +7,6 @@
 /* font faces */
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 
-#page-wrap .styleguide strong{
-	font-weight: 700;
-}
-
 html {
 	font-size: 62.5%;
 	height: 101%;
@@ -123,7 +119,6 @@ nav {
 nav li {
 	margin: 10px 0 9px;
 	list-style: none;
-	font-weight: bold;
 	float: left;
 }
 nav li a,
