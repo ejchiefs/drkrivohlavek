@@ -2,26 +2,32 @@
 	<div class="rug"">
 		<div class="container">
 			<div class="row">
-				<div class="span6">
-					<div id="fb-root"></div>
-					<script>(function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) {return;}
-					js = d.createElement(s); js.id = id;
-					js.src = "//connect.facebook.net/en_US/all.js#appId=293887760626341&xfbml=1";
-					fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
-					<div class="fb-like" data-href="https://www.facebook.com/pages/Bradley-J-Krivohlavek-DDS-PC/127702727298822" data-send="false" data-width="500" data-show-faces="true" data-action="recommend" data-colorscheme="dark"></div>
+				<div class="span8">
+					<div class="fb-like" data-href="https://www.facebook.com/pages/Bradley-J-Krivohlavek-DDS-PC/127702727298822" data-layout="standard" data-action="recommend" data-colorscheme="dark" data-show-faces="true" data-share="true"></div>
 				</div>
-				<div class="span6">
-					<img src="<?php echo url('assets/images/logo-ada.png') ?>" alt="ADA" />
-					<img src="<?php echo url('assets/images/logo-nda.png') ?>" alt="NDA" />
+				<div class="span2 text-right">
+					<a href="http://www.nedental.org/" target="_blank"><img src="<?php echo url('assets/images/logo-nda.png') ?>" alt="NDA" /></a>
+				</div>
+				<div class="span2 text-right">
+					<a href="http://www.ada.org/en/" target="_blank"><img src="<?php echo url('assets/images/logo-ada.png') ?>" alt="ADA" /></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="floor">
-		<div class="container">test</div>
+		<div class="container">
+			<div class="row">
+				<div class="span10">
+					<p>2501 Lakeridge Drive</p>
+					<p>Suite 102</p>
+					<p>Norfolk, NE 68701</p>
+					<p>(402) 371-1170</p>
+				</div>
+				<div class="span2 text-right">
+					<i class="fa fa-star gold"></i> <a href="http://www.rateadentist.com/addarating?officeId=7PyCxA6gn0fOKu4" target="_blank">Rate Us</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </footer>
 

@@ -11,12 +11,15 @@
 <?php echo css('assets/styles/bootstrap-responsive.css'); ?>
 <?php echo css('assets/styles/bootstrap.css'); ?>
 <?php echo css('assets/styles/styles.css'); ?>
+<?php echo css('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'); ?>
 
 <?php echo css('assets/js/bootstrap.js'); ?>
 
 </head>
 
 <body>
+
+<?php snippet('facebook'); ?>
 
 <header>
 	<div class="container">
@@ -26,7 +29,7 @@
 			<span class="number">(402) 371-1170</span>
 		</div>
 		<?php snippet('menu'); ?>
-   </div>
+	</div>
 </header>
 
 <section id="banner">
