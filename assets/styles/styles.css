@@ -16,12 +16,13 @@ html {
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
-	color: #777;
+	color: #212328;
 	line-height: 2.4rem;
 	background: #000;
 	width: 100%;
 }
 header {
+	position: relative;
 	height: 185px;
 	background: #1f2125;
 	background: -moz-linear-gradient(top, #1f2125 0%, #32363c 100%);
@@ -30,6 +31,9 @@ header {
 	background: -ms-linear-gradient(top, #1f2125 0%,#32363c 100%);
 	background: linear-gradient(to bottom, #1f2125 0%,#32363c 100%);
 	border-bottom: 1px solid #000;
+	-webkit-box-shadow: 0px 10px 35px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 10px 35px 0px rgba(0,0,0,1);
+	box-shadow: 0px 10px 35px 0px rgba(0,0,0,1);
 }
 header .logo {
 	margin-top: 26px;
@@ -50,65 +54,6 @@ header .contact .number {
 	font-size: 2.6rem;
 }
 
-section#banner {
-	width: 100%;
-	height: 319px;
-	background: #2c170c;
-}
-section#banner .banner {
-	height: 100%;
-	background-image: url('/assets/images/home/banner.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-section#banner .banner .curtains {
-	height: 100%;
-	background-image: url('/assets/images/home/curtains.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-a {
-	color: #222;
-	text-decoration: none;
-}
-a,
-a:hover,
-a:active,
-a:visited {
-	outline: 0px;
-}
-a:hover {
-	color: red;
-}
-img {
-	outline: 0;
-	border: 0;
-}
-h1 {
-	font-size: 28px;
-	line-height: 40px;
-	color: #222;
-	margin-bottom: 20px;
-}
-h2 {
-	font-size: 28px;
-	font-weight: normal;
-	color: red;
-	margin-bottom: 21px;
-}
-h3 {
-	font-weight: normal;
-	font-size: 20px;
-	color: #222;
-	margin-bottom: 21px;
-}
-h4 {
-	color: red;
-	font-weight: normal;
-}
-p {
-	margin-bottom: 20px;
-}
 nav {
 	position: relative;
 	top: 27px;
@@ -142,13 +87,52 @@ nav li.right {
 	float: right;
 	margin-right: 20px;
 }
+
 section {
 	background: #fff;
 }
-section.content {
-	padding: 40px 0;
+section#banner {
+	width: 100%;
+	height: 319px;
+	background: #2c170c;
 }
+section#banner .banner {
+	height: 100%;
+	background-image: url('/assets/images/home/banner.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+section#banner .curtains {
+	height: 100%;
+	background-image: url('/assets/images/home/curtains.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+section#banner .customerQuote {
+	position: relative;
+	width: 462px;
+	height: 138px;
+	top: 60px;
+	padding: 30px 40px;
+	background-image: url('/assets/images/home/background-quote.png');
+	color: #000;
+}
+.customerQuote p.quotation {
+	font-family: Georgia, Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.customerQuote p.quoter {
+	margin-right: 50px;
+}
+section.content {
+	padding: 40px 0 30px;
+}
+
 footer {
+	color: #fff;
 }
 footer .rug {
     background: #212328;
@@ -166,6 +150,97 @@ footer .floor a {
 	color: #fff;
 }
 
+a {
+	color: #212328;
+	text-decoration: none;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+	outline: 0px;
+}
+a:hover {
+	color: #212328;
+}
+.button {
+	border-radius: 0.25em;
+	color: #fff;
+	display: inline-block;
+	line-height: 1.1em;
+	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.25);
+	text-decoration: none !important;
+}
+.button_large {
+	font-size: 1.8rem;
+	padding: 17px 55px 18px 50px;
+}
+.button_medium {
+	font-size: 1.4rem;
+	padding: 10px 30px 9px 25px;
+}
+.button_small {
+	font-size: 1.2rem;
+	padding: 4px 15px 4px 10px;
+	text-transform: uppercase;
+}
+.button.green {
+	border: 1px solid #398907;
+	text-shadow: 0 1px 0 #398907;
+	color: #fff;
+	background: -moz-linear-gradient(top, #82d24f 0%, #398907 100%);
+	background: -webkit-linear-gradient(top, #82d24f 0%,#398907 100%);
+	background: -o-linear-gradient(top, #82d24f 0%,#398907 100%);
+	background: -ms-linear-gradient(top, #82d24f 0%,#398907 100%);
+	background: linear-gradient(to bottom, #82d24f 0%,#398907 100%);
+}
+img {
+	outline: 0;
+	border: 0;
+}
+h1 {
+	font-size: 28px;
+	line-height: 40px;
+	color: #222;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	color: red;
+	margin-bottom: 21px;
+}
+h3 {
+	font-weight: normal;
+	font-size: 20px;
+	color: #222;
+	margin-bottom: 21px;
+}
+h4 {
+	color: red;
+	font-weight: normal;
+}
+p {
+	margin-bottom: 20px;
+}
+p.text12 {
+	font-size: 1.2rem;
+}
+p.text14 {
+	font-size: 1.4rem;
+}
 .gold {
 	color: #fdb206;
+}
+.break_10 {
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+.break_20 {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.break_40 {
+	margin-top: 20px;
+	padding-bottom: 20px;
 }

@@ -1,5 +1,28 @@
 Title: Home
 ----
-Text: Welcome to our website. My staff and I are dedicated to providing for your complete oral health with care and compassion.Our office and procedures are designed for your comfort, and our staff members are devoted to making your visits enjoyable. We take pride in our ability to deliver the finest type of dental service in general family and cosmetic dentistry.
+Text:
+Welcome to our website. My staff and I are dedicated to providing for your complete oral health with care and compassion. Our office prides itself on offering our patients the best options for optimal dental care.
 
-
+Our patients are our priority, and we are proud to offer the following services:
+----
+ServicesColOne:
+- <a href="/services">Athletic Mouthguards</a>
+- <a href="/services">Crowns, Bridges, and Veneers</a>
+- <a href="/services">Cleaning and Preventive Services</a>
+- <a href="/services">Composite Fillings (Tooth-colored)</a>
+- <a href="/services">Dentures (Full or Partial)</a>
+- <a href="/services">Digital X-rays</a>
+- <a href="/services">Emergency Treatment</a>
+- <a href="/services">Extractions (Primary and Permanent Teeth)</a>
+- <a href="/services">Family Dentistry</a>
+----
+ServicesColTwo:
+- <a href="/services">Implant Restorations</a>
+- <a href="/services">Intra-oral Camera</a>
+- <a href="/services">Nightguards for Bruxism</a>
+- <a href="/services">Orthodontic Evaluations</a>
+- <a href="/services">Panoramic X-rays</a>
+- <a href="/services">Periodontal Treatment for Gum Disease</a>
+- <a href="/services">Sealants</a>
+- <a href="/services">Snoreguards</a>
+- <a href="/services">Teeth Whitening (Bleaching)</a>
