@@ -37,6 +37,7 @@
 	</div>
 </header>
 
+<?php if ($page->uid == 'home') : ?>
 <section id="banner">
 	<div class="banner">
 		<div class="curtains">
@@ -54,3 +55,4 @@
 		</div>
 	</div>
 </section>
+<?php endif; ?>
