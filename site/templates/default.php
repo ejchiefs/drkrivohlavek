@@ -4,10 +4,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="span3 text-center">
-				<img src="/assets/images/staff/drkrivohlavek.png" alt="Dr Brad Krivohlavek" />
+				<img src="/assets/images/home/drkrivohlavek.png" alt="Dr Brad Krivohlavek" />
 				<p class="text12">Dr. Brad Krivohlavek</p>
 				<div class="break_20"></div>
-				<img src="/assets/images/staff/drhatfield.png" alt="Dr Jenna Hatfield" />
+				<img src="/assets/images/home/drhatfield.png" alt="Dr Jenna Hatfield" />
 				<p class="text12">Dr. Jenna Hatfield</p>
 			</div>
 			<div class="span9">

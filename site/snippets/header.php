@@ -38,21 +38,42 @@
 </header>
 
 <?php if ($page->uid == 'home') : ?>
-<section id="banner">
-	<div class="banner">
-		<div class="curtains">
-			<div class="container">
-				<div class="row">
-					<div class="span5"></div>
-					<div class="span7">
-						<div class="customerQuote">
-							<p class="quotation">As always, my visit to your dental office was a pleasant experience. Dr. K. has been my dentist for all the 35 years he has been in practice so that should show that I think he is GREAT as well as his entire staff.</p>
-							<p class="quoter text-right">&mdash; LaDonna McMurty</p>
+	<section id="banner">
+		<div class="banner">
+			<div class="curtains">
+				<div class="container">
+					<div class="row">
+						<div class="span5"></div>
+						<div class="span7">
+							<div class="customerQuote">
+								<p class="quotation">As always, my visit to your dental office was a pleasant experience. Dr. K. has been my dentist for all the 35 years he has been in practice so that should show that I think he is GREAT as well as his entire staff.</p>
+								<p class="quoter text-right">&mdash; LaDonna McMurty</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php else : ?>
+	<section id="subbanner">
+		<div class="banner">
+			<div class="curtains">
+				<div class="container">
+					<h1><?php print $page->title(); ?></h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="breadcrumb">
+		<div class="container">
+			<?php foreach ($site->breadcrumb() as $crumb) :
+				if($crumb->isActive()) :
+					print html($crumb->title());
+				else :
+					print '<a href="'.$crumb->url().'">'.html($crumb->title()).'</a>&nbsp;&nbsp;/&nbsp;&nbsp;';
+				endif;
+			endforeach; ?>
+		</div>
+	</section>
 <?php endif; ?>
