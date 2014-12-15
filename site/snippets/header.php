@@ -60,7 +60,11 @@
 		<div class="banner">
 			<div class="curtains">
 				<div class="container">
-					<h1><?php print $page->title(); ?></h1>
+					<?php if ($page->parent()) : ?>
+						<h1><?php print $page->parent()->title(); ?></h1>
+					<?php else : ?>
+						<h1><?php print $page->title(); ?></h1>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
