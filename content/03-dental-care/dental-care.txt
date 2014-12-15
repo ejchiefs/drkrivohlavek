@@ -1,0 +1,9 @@
+Title: Dental Care
+
+----
+
+IntroText: Our office prides itself on offering our patients the best options for optimal dental care. Our patients are our priority, and we are proud to offer the following services:
+
+----
+
+OutroText: If you have any questions or comments regarding these or other treatments, procedures, products, or materials, please contact us. We strive to stay up-to-date to provide the best dental care possible for our patients.

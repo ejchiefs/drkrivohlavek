@@ -1,23 +1,54 @@
-<?php snippet('header'); ?>
+<?php
+
+snippet('header');
+
+$staffDoctors = $pages->children()->filterBy('role', 'doctor');
+$staffBusiness = $pages->children()->filterBy('role', 'business');
+$staffAssistants = $pages->children()->filterBy('role', 'assistant');
+$staffHygienists = $pages->children()->filterBy('role', 'hygienist');
+
+?>
 
 <section class="content">
 	<div class="container">
-		<h1><?php print $page->title; ?></h1>
 		<div class="row">
-			<div class="span3 text-center">
-				<img src="/assets/images/staff/drkrivohlavek.png" alt="Dr Brad Krivohlavek" />
-			</div>
-			<div class="span9">
-				<?php echo kirbytext($page->drkrivohlavek()); ?>
-			</div>
+			<div class="span3"><h2>Doctors</h2></div>
+			<?php foreach($staffDoctors as $person): ?>
+				<div class="span3 centered">
+					<a href="/<?php print $person->uri; ?>"><img src="/assets/images/staff/<?php print $person->image; ?>.png" alt="<?php print $person->name; ?>" class="staff" /></a>
+					<p class="text14"><a href="/<?php print $person->uri; ?>"><?php print $person->name; ?></a></p>
+				</div>
+			<?php endforeach; ?>
 		</div>
+		<div class="grid_break_40"></div>
 		<div class="row">
-			<div class="span3 text-center">
-				<img src="/assets/images/staff/drhatfield.png" alt="Dr Jenna Hatfield" />
-			</div>
-			<div class="span9">
-				<?php echo kirbytext($page->drhatfield()); ?>
-			</div>
+			<div class="span3"><h2>Business Staff</h2></div>
+			<?php foreach($staffBusiness as $person): ?>
+				<div class="span3 centered">
+					<a href="/<?php print $person->uri; ?>"><img src="/assets/images/staff/<?php print $person->image; ?>.png" alt="<?php print $person->name; ?>" class="staff" /></a>
+					<p class="text14"><a href="/<?php print $person->uri; ?>"><?php print $person->name; ?></a></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
+		<div class="grid_break_40"></div>
+		<div class="row">
+			<div class="span3"><h2>Dental Assistants</h2></div>
+			<?php foreach($staffAssistants as $person): ?>
+				<div class="span3 centered">
+					<a href="/<?php print $person->uri; ?>"><img src="/assets/images/staff/<?php print $person->image; ?>.png" alt="<?php print $person->name; ?>" class="staff" /></a>
+					<p class="text14"><a href="/<?php print $person->uri; ?>"><?php print $person->name; ?></a></p>
+				</div>
+			<?php endforeach; ?>
+		</div>
+		<div class="grid_break_40"></div>
+		<div class="row">
+			<div class="span3"><h2>Dental Hygienists</h2></div>
+			<?php foreach($staffHygienists as $person): ?>
+				<div class="span3 centered">
+					<a href="/<?php print $person->uri; ?>"><img src="/assets/images/staff/<?php print $person->image; ?>.png" alt="<?php print $person->name; ?>" class="staff" /></a>
+					<p class="text14"><a href="/<?php print $person->uri; ?>"><?php print $person->name; ?></a></p>
+				</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
