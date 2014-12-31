@@ -1,0 +1,19 @@
+Title: Tina
+
+----
+
+Name: Tina
+
+----
+
+Role: assistant
+
+----
+
+Image: tina
+
+----
+
+Biography:
+
+Coming Soon

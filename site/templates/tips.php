@@ -10,7 +10,7 @@ $tips = $page->children();
 <section class="content">
 	<div class="container">
 		<div class="row">
-			<div class="span12"><?php echo kirbytext($page->text()); ?></div>
+			<div class="span12"><p><?php echo kirbytext($page->text()); ?></p></div>
 		</div>
 		<div class="row">
 			<div class="span6">

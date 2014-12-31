@@ -26,6 +26,20 @@
 <?php snippet('appointment'); ?>
 <?php snippet('facebook'); ?>
 
+<?php
+$testimonialArray = array(
+	array(
+		"quote" => "As always, my visit to your dental office was a pleasant experience. Dr. K. has been my dentist for all the 35 years he has been in practice so that should show that I think he is GREAT as well as his entire staff.",
+		"name" => "LaDonna"),
+	array(
+		"quote" => "I am always thoroughly impressed with my visits to this office. The staff is extremely friendly and knowledgeable and I feel comfortable with everyone there. Always an excellent experience!",
+		"name" => "Heather"),
+	array(
+		"quote" => "I have always had a great experience at Dr. Krivohlavek's dental office. I almost feel like family. They know us by name and make sure we feel comfortable from beginning to end. Both of my daughters have always been actually excited to go for a dental check-up, which is nice.",
+		"name" => "Amber")
+);
+?>
+
 <header>
 	<div class="container">
 		<a href="<?php echo url() ?>"><img src="<?php echo url('assets/images/logo.png') ?>" alt="<?php echo html($site->title()) ?>" class="logo" /></a>
@@ -46,8 +60,9 @@
 						<div class="span5"></div>
 						<div class="span7">
 							<div class="customerQuote">
-								<p class="quotation">As always, my visit to your dental office was a pleasant experience. Dr. K. has been my dentist for all the 35 years he has been in practice so that should show that I think he is GREAT as well as his entire staff.</p>
-								<p class="quoter text-right">&mdash; LaDonna McMurty</p>
+								<?php $quotation = array_rand($testimonialArray); ?>
+								<p class="quotation"><?php print $testimonialArray[$quotation]['quote']; ?></p>
+								<p class="quoter text-right">&mdash; <?php print $testimonialArray[$quotation]['name']; ?></p>
 							</div>
 						</div>
 					</div>

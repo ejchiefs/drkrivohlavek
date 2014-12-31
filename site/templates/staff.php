@@ -3,7 +3,7 @@
 snippet('header');
 
 $staffDoctors = $pages->children()->filterBy('role', 'doctor');
-$staffBusiness = $pages->children()->filterBy('role', 'business');
+$staffBusiness = $pages->children()->filterBy('role', 'business')->sortBy('name','desc');
 $staffAssistants = $pages->children()->filterBy('role', 'assistant');
 $staffHygienists = $pages->children()->filterBy('role', 'hygienist');
 

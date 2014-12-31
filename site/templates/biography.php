@@ -8,8 +8,10 @@
 				<img src="/assets/images/staff/<?php print $page->image; ?>.png" alt="<?php print $page->name(); ?>" />
 			</div>
 			<div class="span9">
-				<?php print kirbytext($page->name()); ?>
-				<?php print kirbytext($page->biography()); ?>
+				<h2><?php print kirbytext($page->name()); ?></h2>
+				<p><?php print kirbytext($page->biography()); ?></p>
+				<div class="break_40"></div>
+				<p><a href="/staff">Return to Staff</a></p>
 			</div>
 		</div>
 	</div>

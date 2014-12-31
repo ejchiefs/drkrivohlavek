@@ -18,10 +18,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="span10">
-					<p>2501 Lakeridge Drive</p>
-					<p>Suite 102</p>
-					<p>Norfolk, NE 68701</p>
-					<p>(402) 371-1170</p>
+					<p><?php echo html($site->streetaddress()); ?></p>
+					<p><?php echo html($site->city()); ?>, <?php echo html($site->state()); ?> <?php echo html($site->zip()); ?></p>
+					<p><?php echo html($site->phone()); ?></p>
 				</div>
 				<div class="span2 text-right">
 					<i class="fa fa-star gold"></i> <a href="http://www.rateadentist.com/addarating?officeId=7PyCxA6gn0fOKu4" target="_blank">Rate Us</a>
