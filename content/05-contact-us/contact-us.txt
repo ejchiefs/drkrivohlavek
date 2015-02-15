@@ -2,10 +2,14 @@ Title: Contact Us
 ----
 Text: Our mission is to provide excellent care, compassion and concern for all our patients, enabling them to enjoy a lifetime of good oral health. We always welcome new patients to our practice.
 ----
-OfficeHoursMWR: 8am–12pm and 1pm–5pm
+OfficeHoursM: 8am-5pm
 ----
-OfficeHoursT: 7am–1pm
+OfficeHoursT: 7am-4pm
 ----
-OfficeHoursF: 7am–12pm
+OfficeHoursW: 7am-5pm
+----
+OfficeHoursR: 8am-5pm
+----
+OfficeHoursF: 7am-12pm
 ----
 AfterHours: For after-hours emergencies, please call 402.992.5943.

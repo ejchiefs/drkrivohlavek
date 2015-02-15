@@ -8,12 +8,20 @@
 				<div class="break_40"></div>
 				<h3>Office Hours</h3>
 				<div class="row">
-					<div class="span4"><b><p>Monday, Wednesday, Thursday</p></b></div>
-					<div class="span5"><p><?php print $page->officehoursmwr(); ?></p></div>
+					<div class="span4"><b><p>Monday</p></b></div>
+					<div class="span5"><p><?php print $page->officehoursm(); ?></p></div>
 				</div>
 				<div class="row">
 					<div class="span4"><b><p>Tuesday</p></b></div>
 					<div class="span5"><p><?php print $page->officehourst(); ?></p></div>
+				</div>
+				<div class="row">
+					<div class="span4"><b><p>Wednesday</p></b></div>
+					<div class="span5"><p><?php print $page->officehoursw(); ?></p></div>
+				</div>
+				<div class="row">
+					<div class="span4"><b><p>Thursday</p></b></div>
+					<div class="span5"><p><?php print $page->officehoursr(); ?></p></div>
 				</div>
 				<div class="row">
 					<div class="span4"><b><p>Friday</p></b></div>
